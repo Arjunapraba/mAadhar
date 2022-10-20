@@ -71,8 +71,8 @@ public class user_controller {
 			String formatted=String.format("%05d", randomnumber);
 			Date dataapp = new Date();
 			a.setDate_of_application(dataapp);
-			//a.setCitizen_id(Integer.parseInt(formatted));
-			//a.setApplicationId(Integer.parseInt(formatted)/2);
+			a.setCitizen_id(Integer.parseInt(formatted));
+			a.setApplicationId(Integer.parseInt(formatted)/2);
 		    return arepo.save(a);
 	 }
 	 @CrossOrigin("http://localhost:4200")
